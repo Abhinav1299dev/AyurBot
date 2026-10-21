@@ -1,0 +1,7 @@
+# AyurBot lightweight install: no PyTorch / transformer model.
+# The app runs in lexical (BM25) fallback mode. Use if the full install fails
+# or your laptop has little disk space. Set AYURBOT_DISABLE_TRANSFORMER=1.
+gradio>=6.0,<7
+numpy>=1.26,<3
+pandas>=2.1,<4
+pytest>=8.0,<10

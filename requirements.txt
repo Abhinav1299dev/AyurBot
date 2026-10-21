@@ -1,0 +1,9 @@
+# AyurBot full install (semantic search + web UI + tests).
+# Tested with Python 3.11 (see README "Tested versions").
+# On Windows, the PyPI torch wheel is CPU-only, which is what AyurBot uses by default.
+gradio>=6.0,<7
+sentence-transformers>=3.0,<7
+torch>=2.2,<3
+numpy>=1.26,<3
+pandas>=2.1,<4
+pytest>=8.0,<10

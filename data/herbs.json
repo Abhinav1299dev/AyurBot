@@ -1,0 +1,1559 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "title": "AyurBot demonstration knowledge base",
+    "description": "Editable educational knowledge base for AyurBot. All entries are demonstration data summarising traditional Ayurvedic descriptions.",
+    "data_status": "demonstration",
+    "disclaimer": "Traditional Ayurvedic descriptions are not clinical evidence. This data has not been clinically validated and must not be used for diagnosis, treatment or dosing."
+  },
+  "entries": [
+    {
+      "type": "herb",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      },
+      "evidence_note": "Traditional Ayurvedic description. This is not evidence of clinical efficacy or safety for any modern medical condition.",
+      "id": "tulsi",
+      "canonical_name": "Tulsi",
+      "sanskrit_names": [
+        "Tulasi",
+        "Surasa"
+      ],
+      "devanagari": [
+        "तुलसी"
+      ],
+      "english_name": "Holy Basil",
+      "synonyms": [
+        "Tulasi",
+        "Surasa",
+        "Holy Basil",
+        "Sacred Basil"
+      ],
+      "botanical_name": "Ocimum tenuiflorum",
+      "botanical_synonyms": [
+        "Ocimum sanctum"
+      ],
+      "family": "Lamiaceae",
+      "summary": "Tulsi is an aromatic plant that classical Ayurvedic descriptions associate mainly with the respiratory system and with Kapha and Vata.",
+      "traditional_uses": [
+        {
+          "term_id": "kasa",
+          "description": "Described in Ayurvedic literature in the context of Kasa (cough as a classical symptom category)."
+        },
+        {
+          "term_id": "shwasa",
+          "description": "Described in the context of Shwasa (classical category of breathing difficulty)."
+        },
+        {
+          "term_id": "pratishyaya",
+          "description": "Described in the context of Pratishyaya (classical category resembling nasal catarrh)."
+        },
+        {
+          "term_id": "jwara",
+          "description": "Described in the context of Jwara (classical fever category)."
+        }
+      ],
+      "traditional_properties": {
+        "rasa": [
+          "Katu",
+          "Tikta"
+        ],
+        "guna": [
+          "Laghu",
+          "Ruksha"
+        ],
+        "virya": "Ushna",
+        "vipaka": "Katu",
+        "karma": [
+          "Kasahara",
+          "Krimighna",
+          "Deepana"
+        ]
+      },
+      "dosha_associations": {
+        "pacifies": [
+          "vata",
+          "kapha"
+        ],
+        "may_aggravate": [
+          "pitta"
+        ],
+        "note": "Dosha effects are traditional classifications, not measured physiological effects."
+      },
+      "safety_notes": [
+        "Concentrated extracts are different from culinary or household use; their safety profile is not established by this knowledge base.",
+        "People who are pregnant, breastfeeding, taking regular medication or preparing for surgery should consult a qualified healthcare professional before using any herbal product."
+      ]
+    },
+    {
+      "type": "herb",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      },
+      "evidence_note": "Traditional Ayurvedic description. This is not evidence of clinical efficacy or safety for any modern medical condition.",
+      "id": "haridra",
+      "canonical_name": "Haridra",
+      "sanskrit_names": [
+        "Haridra",
+        "Rajani",
+        "Nisha"
+      ],
+      "devanagari": [
+        "हरिद्रा"
+      ],
+      "english_name": "Turmeric",
+      "synonyms": [
+        "Haldi",
+        "Rajani",
+        "Nisha",
+        "Turmeric"
+      ],
+      "botanical_name": "Curcuma longa",
+      "botanical_synonyms": [
+        "Curcuma domestica"
+      ],
+      "family": "Zingiberaceae",
+      "summary": "Haridra (turmeric rhizome) is described in classical Ayurveda mainly in relation to the skin, wounds and Kapha.",
+      "traditional_uses": [
+        {
+          "term_id": "kushtha",
+          "description": "Described in the context of Kushtha (a broad classical group of skin conditions)."
+        },
+        {
+          "term_id": "kandu",
+          "description": "Described in the context of Kandu (itching)."
+        },
+        {
+          "term_id": "vrana",
+          "description": "Described in the context of Vrana (wounds and ulcers), often as external application."
+        },
+        {
+          "term_id": "prameha",
+          "description": "Described in the context of Prameha (a classical group of urinary and metabolic conditions)."
+        }
+      ],
+      "traditional_properties": {
+        "rasa": [
+          "Tikta",
+          "Katu"
+        ],
+        "guna": [
+          "Ruksha",
+          "Laghu"
+        ],
+        "virya": "Ushna",
+        "vipaka": "Katu",
+        "karma": [
+          "Varnya",
+          "Kushthaghna",
+          "Vranaropana"
+        ]
+      },
+      "dosha_associations": {
+        "pacifies": [
+          "kapha"
+        ],
+        "may_aggravate": [],
+        "note": "Classical sources differ on its effect on Vata and Pitta, so only Kapha is listed here."
+      },
+      "safety_notes": [
+        "Culinary turmeric and concentrated curcumin supplements are not equivalent.",
+        "Case reports have linked some turmeric or curcumin supplements to liver injury; anyone with liver disease, gallbladder problems or who takes blood-thinning or other regular medication should ask a qualified professional first."
+      ]
+    },
+    {
+      "type": "herb",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      },
+      "evidence_note": "Traditional Ayurvedic description. This is not evidence of clinical efficacy or safety for any modern medical condition.",
+      "id": "ashwagandha",
+      "canonical_name": "Ashwagandha",
+      "sanskrit_names": [
+        "Ashvagandha",
+        "Varahakarni"
+      ],
+      "devanagari": [
+        "अश्वगंधा",
+        "अश्वगन्धा"
+      ],
+      "english_name": "Winter Cherry",
+      "synonyms": [
+        "Ashvagandha",
+        "Asgandh",
+        "Winter Cherry",
+        "Indian Ginseng"
+      ],
+      "botanical_name": "Withania somnifera",
+      "botanical_synonyms": [],
+      "family": "Solanaceae",
+      "summary": "Ashwagandha root is classed in Ayurveda as a Rasayana (rejuvenative) and Balya (strength-promoting) herb, chiefly associated with Vata.",
+      "traditional_uses": [
+        {
+          "term_id": "daurbalya",
+          "description": "Described in the context of Daurbalya (general weakness or debility)."
+        },
+        {
+          "term_id": "vata_vyadhi",
+          "description": "Described in the context of Vata Vyadhi (a classical group of disorders attributed to Vata)."
+        },
+        {
+          "term_id": "anidra",
+          "description": "Described in the context of Anidra (classical term for sleeplessness)."
+        }
+      ],
+      "traditional_properties": {
+        "rasa": [
+          "Tikta",
+          "Kashaya",
+          "Madhura"
+        ],
+        "guna": [
+          "Laghu",
+          "Snigdha"
+        ],
+        "virya": "Ushna",
+        "vipaka": "Madhura",
+        "karma": [
+          "Rasayana",
+          "Balya"
+        ]
+      },
+      "dosha_associations": {
+        "pacifies": [
+          "vata",
+          "kapha"
+        ],
+        "may_aggravate": [],
+        "note": "Because of its Ushna (heating) virya, some descriptions caution about excess Pitta."
+      },
+      "safety_notes": [
+        "Ashwagandha products have been associated with rare reports of liver injury.",
+        "Commonly advised against during pregnancy; people with thyroid conditions, autoimmune conditions or who take sedatives or other regular medication should consult a qualified professional."
+      ]
+    },
+    {
+      "type": "herb",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      },
+      "evidence_note": "Traditional Ayurvedic description. This is not evidence of clinical efficacy or safety for any modern medical condition.",
+      "id": "brahmi",
+      "canonical_name": "Brahmi",
+      "sanskrit_names": [
+        "Brahmi",
+        "Aindri"
+      ],
+      "devanagari": [
+        "ब्राह्मी"
+      ],
+      "english_name": "Water Hyssop",
+      "synonyms": [
+        "Jalanimba",
+        "Water Hyssop",
+        "Herb of Grace"
+      ],
+      "botanical_name": "Bacopa monnieri",
+      "botanical_synonyms": [
+        "Herpestis monnieria"
+      ],
+      "family": "Plantaginaceae",
+      "summary": "Brahmi is described in Ayurveda as a Medhya (intellect-supporting) Rasayana.",
+      "traditional_uses": [
+        {
+          "term_id": "smriti_daurbalya",
+          "description": "Described in the context of weak memory (Smriti) and learning."
+        },
+        {
+          "term_id": "unmada",
+          "description": "Described in the context of Unmada (classical category of mental disturbance)."
+        },
+        {
+          "term_id": "apasmara",
+          "description": "Described in the context of Apasmara (classical category of seizure-like episodes)."
+        }
+      ],
+      "traditional_properties": {
+        "rasa": [
+          "Tikta",
+          "Kashaya",
+          "Madhura"
+        ],
+        "guna": [
+          "Laghu",
+          "Sara"
+        ],
+        "virya": "Sheeta",
+        "vipaka": "Madhura",
+        "karma": [
+          "Medhya",
+          "Rasayana"
+        ]
+      },
+      "dosha_associations": {
+        "pacifies": [
+          "vata",
+          "kapha"
+        ],
+        "may_aggravate": [],
+        "note": "Some sources describe Brahmi as balancing all three doshas."
+      },
+      "ambiguity_note": "In parts of India the name Brahmi is also used for Centella asiatica (Mandukaparni). This entry refers to Bacopa monnieri.",
+      "safety_notes": [
+        "Digestive upset has been reported with Bacopa products.",
+        "Anyone taking medication for thyroid conditions, seizures or mood, or who is pregnant, should consult a qualified professional."
+      ]
+    },
+    {
+      "type": "herb",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      },
+      "evidence_note": "Traditional Ayurvedic description. This is not evidence of clinical efficacy or safety for any modern medical condition.",
+      "id": "guduchi",
+      "canonical_name": "Guduchi",
+      "sanskrit_names": [
+        "Guduchi",
+        "Amrita",
+        "Chinnaruha"
+      ],
+      "devanagari": [
+        "गुडूची"
+      ],
+      "english_name": "Heart-leaved Moonseed",
+      "synonyms": [
+        "Giloy",
+        "Amrita",
+        "Amritavalli",
+        "Heart-leaved Moonseed"
+      ],
+      "botanical_name": "Tinospora cordifolia",
+      "botanical_synonyms": [],
+      "family": "Menispermaceae",
+      "summary": "Guduchi stem is described in classical Ayurveda as a Rasayana that is traditionally said to balance all three doshas.",
+      "traditional_uses": [
+        {
+          "term_id": "jwara",
+          "description": "Described in the context of Jwara (classical fever category), including recurring fevers."
+        },
+        {
+          "term_id": "prameha",
+          "description": "Described in the context of Prameha."
+        },
+        {
+          "term_id": "kamala",
+          "description": "Described in the context of Kamala (classical term involving yellow discoloration)."
+        },
+        {
+          "term_id": "vatarakta",
+          "description": "Described in the context of Vatarakta (classical joint and blood-related disorder)."
+        }
+      ],
+      "traditional_properties": {
+        "rasa": [
+          "Tikta",
+          "Kashaya"
+        ],
+        "guna": [
+          "Guru",
+          "Snigdha"
+        ],
+        "virya": "Ushna",
+        "vipaka": "Madhura",
+        "karma": [
+          "Rasayana",
+          "Deepana"
+        ]
+      },
+      "dosha_associations": {
+        "pacifies": [
+          "vata",
+          "pitta",
+          "kapha"
+        ],
+        "may_aggravate": [],
+        "note": "Traditionally described as Tridoshashamaka (balancing all three doshas)."
+      },
+      "safety_notes": [
+        "Published case series have described liver injury in some people using Guduchi (Giloy) products; causality and product identity have been debated.",
+        "Anyone with liver disease, autoimmune disease or diabetes medication, or who is pregnant, should consult a qualified professional."
+      ]
+    },
+    {
+      "type": "herb",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      },
+      "evidence_note": "Traditional Ayurvedic description. This is not evidence of clinical efficacy or safety for any modern medical condition.",
+      "id": "neem",
+      "canonical_name": "Neem",
+      "sanskrit_names": [
+        "Nimba",
+        "Arishta",
+        "Pichumarda"
+      ],
+      "devanagari": [
+        "नीम",
+        "निम्ब"
+      ],
+      "english_name": "Neem",
+      "synonyms": [
+        "Nimba",
+        "Arishta",
+        "Pichumarda",
+        "Indian Lilac",
+        "Margosa"
+      ],
+      "botanical_name": "Azadirachta indica",
+      "botanical_synonyms": [
+        "Melia azadirachta"
+      ],
+      "family": "Meliaceae",
+      "summary": "Neem (Nimba) is a strongly bitter tree described in Ayurveda mainly for the skin and for Kapha and Pitta.",
+      "traditional_uses": [
+        {
+          "term_id": "kushtha",
+          "description": "Described in the context of Kushtha (classical skin-condition group)."
+        },
+        {
+          "term_id": "kandu",
+          "description": "Described in the context of Kandu (itching)."
+        },
+        {
+          "term_id": "krimi",
+          "description": "Described in the context of Krimi (classical category of worms and parasites)."
+        },
+        {
+          "term_id": "vrana",
+          "description": "Described in the context of Vrana (wounds), often as external application."
+        }
+      ],
+      "traditional_properties": {
+        "rasa": [
+          "Tikta",
+          "Kashaya"
+        ],
+        "guna": [
+          "Laghu",
+          "Ruksha"
+        ],
+        "virya": "Sheeta",
+        "vipaka": "Katu",
+        "karma": [
+          "Krimighna",
+          "Kushthaghna",
+          "Kandughna"
+        ]
+      },
+      "dosha_associations": {
+        "pacifies": [
+          "kapha",
+          "pitta"
+        ],
+        "may_aggravate": [
+          "vata"
+        ],
+        "note": "Its bitter, dry qualities are traditionally said to increase Vata."
+      },
+      "safety_notes": [
+        "Swallowing neem oil has caused serious poisoning in young children; neem oil must be kept away from children.",
+        "Not advised during pregnancy or when trying to conceive without professional guidance."
+      ]
+    },
+    {
+      "id": "vata",
+      "type": "dosha",
+      "canonical_name": "Vata",
+      "devanagari": [
+        "वात"
+      ],
+      "synonyms": [
+        "Vaata",
+        "Vayu",
+        "Vaayu"
+      ],
+      "summary": "Vata is the dosha of movement in Ayurvedic theory, made up of the space and air elements.",
+      "elements": [
+        "Akasha (space)",
+        "Vayu (air)"
+      ],
+      "functions": [
+        "Movement and transport",
+        "Breathing and circulation (as described in Ayurvedic theory)",
+        "Nervous activity and communication"
+      ],
+      "evidence_note": "Doshas are explanatory concepts of Ayurvedic theory, not measurable biomedical entities.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "pitta",
+      "type": "dosha",
+      "canonical_name": "Pitta",
+      "devanagari": [
+        "पित्त"
+      ],
+      "synonyms": [
+        "Pittam"
+      ],
+      "summary": "Pitta is the dosha of transformation in Ayurvedic theory, made up of the fire and water elements.",
+      "elements": [
+        "Agni (fire)",
+        "Jala (water)"
+      ],
+      "functions": [
+        "Digestion and metabolism",
+        "Body heat",
+        "Perception and understanding"
+      ],
+      "evidence_note": "Doshas are explanatory concepts of Ayurvedic theory, not measurable biomedical entities.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kapha",
+      "type": "dosha",
+      "canonical_name": "Kapha",
+      "devanagari": [
+        "कफ"
+      ],
+      "synonyms": [
+        "Shleshma",
+        "Shleshman"
+      ],
+      "summary": "Kapha is the dosha of structure and cohesion in Ayurvedic theory, made up of the water and earth elements.",
+      "elements": [
+        "Jala (water)",
+        "Prithvi (earth)"
+      ],
+      "functions": [
+        "Structure and stability",
+        "Lubrication of joints and tissues",
+        "Endurance"
+      ],
+      "evidence_note": "Doshas are explanatory concepts of Ayurvedic theory, not measurable biomedical entities.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kasa",
+      "type": "condition_term",
+      "canonical_name": "Kasa",
+      "devanagari": [
+        "कास"
+      ],
+      "synonyms": [
+        "Kaasa"
+      ],
+      "approximate_english_terms": [
+        "cough"
+      ],
+      "summary": "Kasa is the classical Ayurvedic term for cough as a symptom category.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "shwasa",
+      "type": "condition_term",
+      "canonical_name": "Shwasa",
+      "devanagari": [
+        "श्वास"
+      ],
+      "synonyms": [
+        "Shvasa",
+        "Swasa"
+      ],
+      "approximate_english_terms": [
+        "breathlessness",
+        "breathing difficulty"
+      ],
+      "summary": "Shwasa is a classical category of difficult or laboured breathing.",
+      "mapping_note": "Classical term. It is sometimes loosely compared with asthma, but it is not the same as a modern asthma diagnosis.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "jwara",
+      "type": "condition_term",
+      "canonical_name": "Jwara",
+      "devanagari": [
+        "ज्वर"
+      ],
+      "synonyms": [
+        "Jvara"
+      ],
+      "approximate_english_terms": [
+        "fever"
+      ],
+      "summary": "Jwara is the classical Ayurvedic category for fever states.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "pratishyaya",
+      "type": "condition_term",
+      "canonical_name": "Pratishyaya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "common cold",
+        "nasal catarrh",
+        "runny nose"
+      ],
+      "summary": "Pratishyaya is a classical term for conditions with nasal discharge and congestion.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kushtha",
+      "type": "condition_term",
+      "canonical_name": "Kushtha",
+      "devanagari": [
+        "कुष्ठ"
+      ],
+      "synonyms": [
+        "Kushta",
+        "Kustha"
+      ],
+      "approximate_english_terms": [
+        "skin disease",
+        "skin disorder",
+        "skin condition"
+      ],
+      "summary": "Kushtha is a broad classical group of skin conditions.",
+      "mapping_note": "Classical umbrella term for many skin conditions. It is not equivalent to leprosy or to any single modern dermatological diagnosis.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kandu",
+      "type": "condition_term",
+      "canonical_name": "Kandu",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "itching",
+        "itch"
+      ],
+      "summary": "Kandu is the classical term for itching.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "vrana",
+      "type": "condition_term",
+      "canonical_name": "Vrana",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "wound",
+        "wounds",
+        "ulcer"
+      ],
+      "summary": "Vrana is the classical term for wounds and ulcers.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "krimi",
+      "type": "condition_term",
+      "canonical_name": "Krimi",
+      "devanagari": [],
+      "synonyms": [
+        "Krmi"
+      ],
+      "approximate_english_terms": [
+        "worms",
+        "intestinal worms",
+        "parasites"
+      ],
+      "summary": "Krimi is a classical category covering worms and other parasites.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "prameha",
+      "type": "condition_term",
+      "canonical_name": "Prameha",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "urinary disorder",
+        "diabetes"
+      ],
+      "summary": "Prameha is a classical group of conditions characterised by abnormal urination, described as metabolic in nature.",
+      "mapping_note": "Classical term. Madhumeha, one subtype, is often compared with diabetes mellitus, but Prameha is not equivalent to a modern diabetes diagnosis. Diabetes requires medical diagnosis and care.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kamala",
+      "type": "condition_term",
+      "canonical_name": "Kamala",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "jaundice"
+      ],
+      "summary": "Kamala is a classical term for a condition with yellow discoloration of the eyes and skin.",
+      "mapping_note": "Classical term. Jaundice is a sign that needs prompt medical evaluation; Kamala is not a substitute for that diagnosis.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "vatarakta",
+      "type": "condition_term",
+      "canonical_name": "Vatarakta",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "gout-like joint disorder"
+      ],
+      "summary": "Vatarakta is a classical disorder involving Vata and Rakta (blood), with joint symptoms.",
+      "mapping_note": "Classical term. It is sometimes compared with gout but is not equivalent to it.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "vata_vyadhi",
+      "type": "condition_term",
+      "canonical_name": "Vata Vyadhi",
+      "devanagari": [],
+      "synonyms": [
+        "Vatavyadhi",
+        "Vata disorders"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Vata Vyadhi is a classical group of disorders attributed to disturbed Vata.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "daurbalya",
+      "type": "condition_term",
+      "canonical_name": "Daurbalya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "weakness",
+        "debility",
+        "fatigue"
+      ],
+      "summary": "Daurbalya is the classical term for general weakness or debility.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "anidra",
+      "type": "condition_term",
+      "canonical_name": "Anidra",
+      "devanagari": [],
+      "synonyms": [
+        "Nidranasha"
+      ],
+      "approximate_english_terms": [
+        "insomnia",
+        "sleeplessness"
+      ],
+      "summary": "Anidra is the classical term for sleeplessness.",
+      "mapping_note": "Classical term, not equivalent to a modern insomnia diagnosis. Persistent sleeplessness can have many causes that need medical assessment.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "unmada",
+      "type": "condition_term",
+      "canonical_name": "Unmada",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "summary": "Unmada is a classical category of mental disturbance.",
+      "mapping_note": "Classical term. It is not equivalent to any modern psychiatric diagnosis; mental-health concerns need professional care.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "apasmara",
+      "type": "condition_term",
+      "canonical_name": "Apasmara",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "summary": "Apasmara is a classical category describing seizure-like episodes with loss of awareness.",
+      "mapping_note": "Classical term. It is often compared with epilepsy but is not equivalent; seizures need medical care.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "smriti_daurbalya",
+      "type": "condition_term",
+      "canonical_name": "Smriti Daurbalya",
+      "devanagari": [],
+      "synonyms": [
+        "Smritinasha"
+      ],
+      "approximate_english_terms": [
+        "poor memory",
+        "memory weakness"
+      ],
+      "summary": "Smriti Daurbalya describes weakness of memory in Ayurvedic terminology.",
+      "mapping_note": "Classical Ayurvedic term. The English words shown are approximate glosses, not equivalent modern diagnoses.",
+      "evidence_note": "Terminology entry only; it does not describe a treatment.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "medhya",
+      "type": "traditional_property",
+      "canonical_name": "Medhya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "brain tonic",
+        "nootropic"
+      ],
+      "property_kind": "karma",
+      "summary": "Medhya describes herbs traditionally said to support intellect and memory.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "rasayana",
+      "type": "traditional_property",
+      "canonical_name": "Rasayana",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "rejuvenative"
+      ],
+      "property_kind": "karma",
+      "summary": "Rasayana describes rejuvenative substances and practices in Ayurveda.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "balya",
+      "type": "traditional_property",
+      "canonical_name": "Balya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "strength-promoting"
+      ],
+      "property_kind": "karma",
+      "summary": "Balya describes substances traditionally said to promote strength.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "deepana",
+      "type": "traditional_property",
+      "canonical_name": "Deepana",
+      "devanagari": [],
+      "synonyms": [
+        "Dipana"
+      ],
+      "approximate_english_terms": [
+        "appetiser"
+      ],
+      "property_kind": "karma",
+      "summary": "Deepana describes substances traditionally said to kindle digestive fire (Agni).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "krimighna",
+      "type": "traditional_property",
+      "canonical_name": "Krimighna",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "anthelmintic"
+      ],
+      "property_kind": "karma",
+      "summary": "Krimighna describes substances traditionally used against Krimi.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kasahara",
+      "type": "traditional_property",
+      "canonical_name": "Kasahara",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "property_kind": "karma",
+      "summary": "Kasahara describes substances traditionally said to relieve Kasa (cough).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kushthaghna",
+      "type": "traditional_property",
+      "canonical_name": "Kushthaghna",
+      "devanagari": [],
+      "synonyms": [
+        "Kushtaghna"
+      ],
+      "approximate_english_terms": [],
+      "property_kind": "karma",
+      "summary": "Kushthaghna describes substances traditionally used for Kushtha (skin conditions).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kandughna",
+      "type": "traditional_property",
+      "canonical_name": "Kandughna",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "property_kind": "karma",
+      "summary": "Kandughna describes substances traditionally said to relieve itching.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "varnya",
+      "type": "traditional_property",
+      "canonical_name": "Varnya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "complexion-enhancing"
+      ],
+      "property_kind": "karma",
+      "summary": "Varnya describes substances traditionally said to improve complexion.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "vranaropana",
+      "type": "traditional_property",
+      "canonical_name": "Vranaropana",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "wound healing"
+      ],
+      "property_kind": "karma",
+      "summary": "Vranaropana describes substances traditionally said to support wound healing.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "ushna",
+      "type": "traditional_property",
+      "canonical_name": "Ushna",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "property_kind": "virya",
+      "summary": "Ushna (hot) is a virya (potency) or guna describing a heating action in Ayurvedic theory.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "sheeta",
+      "type": "traditional_property",
+      "canonical_name": "Sheeta",
+      "devanagari": [],
+      "synonyms": [
+        "Shita",
+        "Sita"
+      ],
+      "approximate_english_terms": [],
+      "property_kind": "virya",
+      "summary": "Sheeta (cold) is a virya (potency) or guna describing a cooling action in Ayurvedic theory.",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "tikta",
+      "type": "traditional_property",
+      "canonical_name": "Tikta",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "bitter taste"
+      ],
+      "property_kind": "rasa",
+      "summary": "Tikta is the bitter rasa (taste).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "katu",
+      "type": "traditional_property",
+      "canonical_name": "Katu",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "pungent taste"
+      ],
+      "property_kind": "rasa",
+      "summary": "Katu is the pungent rasa (taste).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "kashaya",
+      "type": "traditional_property",
+      "canonical_name": "Kashaya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "astringent taste"
+      ],
+      "property_kind": "rasa",
+      "summary": "Kashaya is the astringent rasa (taste).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "madhura",
+      "type": "traditional_property",
+      "canonical_name": "Madhura",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "sweet taste"
+      ],
+      "property_kind": "rasa",
+      "summary": "Madhura is the sweet rasa (taste).",
+      "evidence_note": "A traditional pharmacological classification, not a clinically demonstrated effect.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "tridosha",
+      "type": "concept",
+      "canonical_name": "Tridosha",
+      "devanagari": [
+        "त्रिदोष"
+      ],
+      "synonyms": [
+        "Tridosha theory",
+        "three doshas"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Tridosha is the Ayurvedic framework that explains the body through three doshas: Vata, Pitta and Kapha.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "dosha",
+      "type": "concept",
+      "canonical_name": "Dosha",
+      "devanagari": [
+        "दोष"
+      ],
+      "synonyms": [
+        "Doshas"
+      ],
+      "approximate_english_terms": [],
+      "summary": "A dosha is one of the three functional principles (Vata, Pitta, Kapha) used in Ayurvedic theory.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "prakriti",
+      "type": "concept",
+      "canonical_name": "Prakriti",
+      "devanagari": [
+        "प्रकृति"
+      ],
+      "synonyms": [
+        "Prakruti"
+      ],
+      "approximate_english_terms": [
+        "constitution"
+      ],
+      "summary": "Prakriti is a person's inherent constitution in Ayurveda, described as a characteristic balance of the doshas.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "vikriti",
+      "type": "concept",
+      "canonical_name": "Vikriti",
+      "devanagari": [
+        "विकृति"
+      ],
+      "synonyms": [
+        "Vikruti"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Vikriti is the current state of dosha imbalance in Ayurvedic theory, as distinct from Prakriti.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "agni",
+      "type": "concept",
+      "canonical_name": "Agni",
+      "devanagari": [
+        "अग्नि"
+      ],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "digestive fire"
+      ],
+      "summary": "Agni is the Ayurvedic concept of digestive and metabolic fire.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "ama",
+      "type": "concept",
+      "canonical_name": "Ama",
+      "devanagari": [
+        "आम"
+      ],
+      "synonyms": [
+        "Aama"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Ama is the Ayurvedic concept of incompletely digested material attributed to weak Agni.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "dhatu",
+      "type": "concept",
+      "canonical_name": "Dhatu",
+      "devanagari": [
+        "धातु"
+      ],
+      "synonyms": [
+        "Dhatus",
+        "Sapta Dhatu"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Dhatus are the seven bodily tissues described in Ayurveda.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "ojas",
+      "type": "concept",
+      "canonical_name": "Ojas",
+      "devanagari": [
+        "ओजस्"
+      ],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "summary": "Ojas is the Ayurvedic concept of the essence of the tissues, linked with vitality.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "rasa_taste",
+      "type": "concept",
+      "canonical_name": "Rasa",
+      "devanagari": [],
+      "synonyms": [
+        "Shad Rasa",
+        "six tastes"
+      ],
+      "approximate_english_terms": [
+        "taste"
+      ],
+      "summary": "Rasa means taste in Ayurvedic pharmacology; six rasas are described.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "guna",
+      "type": "concept",
+      "canonical_name": "Guna",
+      "devanagari": [],
+      "synonyms": [
+        "Gunas"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Guna means a quality or attribute, for example Laghu (light) or Guru (heavy).",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "virya",
+      "type": "concept",
+      "canonical_name": "Virya",
+      "devanagari": [],
+      "synonyms": [
+        "Veerya"
+      ],
+      "approximate_english_terms": [
+        "potency"
+      ],
+      "summary": "Virya is the potency of a substance, usually classed as Ushna (hot) or Sheeta (cold).",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "vipaka",
+      "type": "concept",
+      "canonical_name": "Vipaka",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [],
+      "summary": "Vipaka is the post-digestive effect of a substance in Ayurvedic pharmacology.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "prabhava",
+      "type": "concept",
+      "canonical_name": "Prabhava",
+      "devanagari": [],
+      "synonyms": [
+        "Prabhav"
+      ],
+      "approximate_english_terms": [],
+      "summary": "Prabhava is a specific action of a substance that is not explained by its rasa, virya or vipaka.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    },
+    {
+      "id": "dinacharya",
+      "type": "concept",
+      "canonical_name": "Dinacharya",
+      "devanagari": [],
+      "synonyms": [],
+      "approximate_english_terms": [
+        "daily routine"
+      ],
+      "summary": "Dinacharya is the Ayurvedic concept of a daily routine.",
+      "evidence_note": "A concept of Ayurvedic theory, described here for educational purposes.",
+      "data_status": "demonstration",
+      "source": {
+        "type": "demonstration_summary",
+        "description": "Compiled for this educational prototype from widely repeated summaries of classical Ayurvedic descriptions. Not checked line-by-line against a specific monograph or edition.",
+        "reference": null,
+        "suggested_verification": "The Ayurvedic Pharmacopoeia of India (Government of India, Ministry of AYUSH) and the classical texts it cites."
+      }
+    }
+  ]
+}

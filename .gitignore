@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local configuration
+.env
+
+# Model / Gradio caches (if you point AYURBOT_MODEL_CACHE_DIR inside the project)
+models/
+.gradio/
+flagged/
+
+# Editors / OS
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local IDE settings
+.vscode/
+!.vscode/extensions.json
+
+# Environment files
+.env.*
+!.env.example
+
+# Build artifacts
+build/
+dist/
+*.egg-info/

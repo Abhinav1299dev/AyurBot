@@ -58,76 +58,83 @@ EXAMPLES = [
 
 CSS = """
 :root {
-  --ab-green: #2e6b47; --ab-green-dark: #1f4d33; --ab-mint: #f1f8f3; --ab-mint-line: #d6e9dc;
-  --ab-turmeric: #b7790c; --ab-turmeric-soft: #fff8ea; --ab-line: #e6ebe7;
-  --ab-ink: #17241c; --ab-muted: #627068;
+  --ab-forest: #1e3a2a; --ab-forest-2: #2a4d37; --ab-leaf: #3f7a55; --ab-moss: #e3eadf;
+  --ab-page: #eceee8; --ab-card: #f9faf7; --ab-line: #d8ded3; --ab-ink: #1f2a22; --ab-muted: #5e6b61;
+  --ab-turmeric: #b9801a; --ab-turmeric-soft: #f4ecd9;
+  --ab-vata: #6f8aa6; --ab-pitta: #c4692f; --ab-kapha: #5f8c5a;
 }
-body, .gradio-container { background: #ffffff !important; }
-.gradio-container { max-width: 1360px !important; margin: 0 auto !important; padding: 0 24px 28px !important; }
+.dark {
+  --ab-forest: #13261b; --ab-forest-2: #1b3324; --ab-leaf: #8cc79a; --ab-moss: #1f2d24;
+  --ab-page: #101612; --ab-card: #161f19; --ab-line: #2b3a30; --ab-ink: #e3ebe4; --ab-muted: #a2b1a6;
+  --ab-turmeric-soft: #2a2416;
+}
+body, .gradio-container { background: var(--ab-page) !important; }
+.gradio-container { max-width: 1360px !important; margin: 0 auto !important; padding: 0 22px 26px !important; }
 footer { display: none !important; }
 
-/* Header */
-#ab-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
-  padding: 20px 2px 16px; border-bottom: 1px solid var(--ab-line); margin-bottom: 16px; }
-#ab-brand { display: flex; align-items: center; gap: 14px; }
-#ab-brand h1 { font-family: Georgia, "Times New Roman", serif; font-size: 1.75rem; font-weight: 600;
-  margin: 0; color: var(--ab-green-dark); letter-spacing: -0.01em; line-height: 1.1; }
-#ab-brand p { margin: 4px 0 0; font-size: 0.92rem; color: var(--ab-muted); }
-#ab-pills { display: flex; gap: 8px; flex-wrap: wrap; }
-.ab-pill { display: inline-flex; align-items: center; gap: 7px; font-size: 0.8rem; font-weight: 600;
-  padding: 6px 12px; border-radius: 999px; background: var(--ab-mint); color: var(--ab-green-dark);
-  border: 1px solid var(--ab-mint-line); }
-.ab-dot { width: 8px; height: 8px; border-radius: 50%; background: #2fa35a; }
-.ab-dot.warn { background: #d99a15; }
-.ab-dot.err { background: #d4483b; }
+/* Header: forest band with a faint mandala and the three doshas */
+#ab-header { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between;
+  gap: 18px; flex-wrap: wrap; padding: 22px 28px; margin: 0 0 14px; border-radius: 0 0 18px 18px; color: #eef4ef;
+  background: linear-gradient(120deg, var(--ab-forest) 0%, var(--ab-forest-2) 100%); }
+#ab-header .ab-mandala { position: absolute; right: -40px; top: -60px; opacity: .10; pointer-events: none; }
+#ab-brand { position: relative; display: flex; align-items: center; gap: 14px; }
+#ab-brand h1 { font-family: Georgia, "Palatino Linotype", "Book Antiqua", serif; font-size: 1.8rem; font-weight: 600;
+  margin: 0; color: #fbf6e9; letter-spacing: .01em; line-height: 1.1; }
+#ab-brand p { margin: 4px 0 0; font-size: 0.9rem; color: #c3d4c7; }
+#ab-brand .ab-sanskrit { color: #e3c178; font-family: Georgia, serif; font-size: 0.95rem; margin-left: 6px; }
+#ab-right { position: relative; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+#ab-doshas, #ab-pills { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.ab-dosha { display: inline-flex; align-items: center; gap: 7px; font-size: 0.78rem; color: #e8efe9;
+  padding: 5px 11px; border-radius: 999px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); }
+.ab-dosha i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.ab-dosha small { color: #b4c6b8; }
+.ab-pill { display: inline-flex; align-items: center; gap: 7px; font-size: 0.78rem; font-weight: 600;
+  padding: 5px 11px; border-radius: 999px; background: rgba(0,0,0,.18); color: #eef5ef; }
+.ab-dot { width: 8px; height: 8px; border-radius: 50%; background: #86d39a; }
+.ab-dot.warn { background: #e9bc55; }
+.ab-dot.err { background: #ec7b6f; }
 
 /* Safety notice */
 #ab-disclaimer { display: flex; gap: 12px; align-items: flex-start; background: var(--ab-turmeric-soft);
-  border: 1px solid #f1dfb5; border-radius: 12px; padding: 12px 16px; color: #4a3a12;
-  font-size: 0.88rem; line-height: 1.55; margin-bottom: 8px; }
+  border-left: 4px solid var(--ab-turmeric); border-radius: 10px; padding: 11px 16px; color: var(--ab-ink);
+  font-size: 0.87rem; line-height: 1.55; margin-bottom: 6px; }
 #ab-disclaimer svg { flex: none; margin-top: 1px; }
-#ab-disclaimer b { color: #7a5108; }
 
 /* Cards */
-.ab-card { background: #ffffff !important; border: 1px solid var(--ab-line) !important; border-radius: 16px !important;
-  padding: 18px !important; box-shadow: 0 1px 3px rgba(23,36,28,.04), 0 6px 18px rgba(23,36,28,.04); }
-.ab-section-title h3 { margin: 0 0 3px !important; font-size: 1.05rem !important; color: var(--ab-ink); font-weight: 650; }
-.ab-section-title p { margin: 0 !important; color: var(--ab-muted); font-size: 0.86rem; }
-#ab-chat { border: 1px solid var(--ab-line) !important; border-radius: 12px !important; background: #fbfdfb !important; }
-#ab-input textarea { font-size: 0.98rem !important; background: #ffffff !important; }
+.ab-card { background: var(--ab-card) !important; border: 1px solid var(--ab-line) !important;
+  border-radius: 16px !important; padding: 18px !important; box-shadow: 0 2px 10px rgba(30,58,42,.05); }
+.ab-section-title h3 { margin: 0 0 3px !important; font-family: Georgia, serif; font-size: 1.12rem !important;
+  font-weight: 600; color: var(--ab-forest-2); }
+.dark .ab-section-title h3 { color: var(--ab-leaf); }
+.ab-section-title p { margin: 0 !important; color: var(--ab-muted); font-size: 0.85rem; }
+#ab-chat { border: 1px solid var(--ab-line) !important; border-radius: 12px !important; }
+#ab-input textarea { font-size: 0.98rem !important; }
 #ab-send { min-height: 46px; align-self: stretch; }
 
-/* Quick topics */
+/* Quick questions */
 .ab-topic-label p { margin: 10px 0 4px !important; font-size: 0.78rem; font-weight: 650; color: var(--ab-muted); }
-.ab-chip { border-radius: 999px !important; background: #ffffff !important; border: 1px solid var(--ab-mint-line) !important;
-  color: var(--ab-green-dark) !important; font-weight: 500 !important; font-size: 0.84rem !important;
-  box-shadow: none !important; }
-.ab-chip:hover { background: var(--ab-mint) !important; border-color: var(--ab-green) !important; }
-.ab-chip:focus-visible { outline: 2px solid var(--ab-green) !important; outline-offset: 2px; }
+.ab-chip { border-radius: 999px !important; background: var(--ab-moss) !important; border: 1px solid transparent !important;
+  color: var(--ab-forest-2) !important; font-weight: 500 !important; font-size: 0.83rem !important; box-shadow: none !important; }
+.dark .ab-chip { color: var(--ab-ink) !important; }
+.ab-chip:hover { border-color: var(--ab-leaf) !important; }
+.ab-chip:focus-visible { outline: 2px solid var(--ab-leaf) !important; outline-offset: 2px; }
 
 /* Explainability */
 #ab-legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px 14px;
-  font-size: 0.8rem; color: var(--ab-muted); padding: 10px 12px; background: #fafcfa;
-  border: 1px solid var(--ab-line); border-radius: 10px; margin: 6px 0 4px; }
+  font-size: 0.8rem; color: var(--ab-muted); padding: 10px 12px; background: var(--ab-moss);
+  border-radius: 10px; margin: 6px 0 4px; }
 #ab-legend b { color: var(--ab-ink); font-weight: 600; margin-right: 4px; font-size: 0.74rem; }
 #ab-legend span.sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px;
-  border: 1px solid rgba(0,0,0,.15); }
+  border: 1px solid rgba(0,0,0,.18); }
 #ab-status { font-size: 0.86rem; line-height: 1.55; }
 #ab-footer { text-align: center; color: var(--ab-muted); font-size: 0.8rem; padding-top: 14px; }
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   .gradio-container { padding: 0 10px 18px !important; }
+  #ab-header { padding: 16px 18px; }
+  #ab-right { align-items: flex-start; }
+  #ab-doshas, #ab-pills { justify-content: flex-start; }
   #ab-brand h1 { font-size: 1.45rem; }
   .ab-card { padding: 12px !important; }
-}
-"""
-# Always open in light mode so the page stays white.
-FORCE_LIGHT_JS = """
-() => {
-  const url = new URL(window.location.href);
-  if (url.searchParams.get('__theme') !== 'light') {
-    url.searchParams.set('__theme', 'light');
-    window.location.replace(url.href);
-  }
 }
 """
 
@@ -209,8 +216,8 @@ def status_markdown(service: AyurBotService, last=None) -> str:
 
 LEAF_SVG = (
     '<svg width="42" height="42" viewBox="0 0 48 48" aria-hidden="true">'
-    '<rect width="48" height="48" rx="12" fill="#2e6b47"/>'
-    '<path d="M14 34c0-12 8-20 22-21-1 14-9 22-21 22" fill="#9fd8a9"/>'
+    '<rect width="48" height="48" rx="12" fill="#b9801a"/>'
+    '<path d="M14 34c0-12 8-20 22-21-1 14-9 22-21 22" fill="#f6ebcc"/>'
     '<path d="M14 35c5-7 10-12 17-17" stroke="#1f3d2b" stroke-width="2.2" fill="none" stroke-linecap="round"/>'
     '</svg>'
 )
@@ -218,7 +225,19 @@ LEAF_SVG = (
 
 SHIELD_SVG = (
     '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 '
-    '4.6-1.6 8-6 8-11V5l-8-3z" fill="#b7790c"/><path d="M11 7h2v6h-2zM11 15h2v2h-2z" fill="#fff"/></svg>'
+    '4.6-1.6 8-6 8-11V5l-8-3z" fill="#b9801a"/><path d="M11 7h2v6h-2zM11 15h2v2h-2z" fill="#fff"/></svg>'
+)
+
+
+MANDALA_SVG = (
+    '<svg class="ab-mandala" width="320" height="320" viewBox="0 0 200 200" aria-hidden="true">'
+    + "".join(
+        f'<ellipse cx="100" cy="55" rx="16" ry="45" fill="none" stroke="#f3e2b3" stroke-width="1.2" '
+        f'transform="rotate({angle} 100 100)"/>'
+        for angle in range(0, 360, 30)
+    )
+    + '<circle cx="100" cy="100" r="22" fill="none" stroke="#f3e2b3" stroke-width="1.2"/>'
+    '<circle cx="100" cy="100" r="92" fill="none" stroke="#f3e2b3" stroke-width="1"/></svg>'
 )
 
 
@@ -227,16 +246,25 @@ def header_html(service: AyurBotService) -> str:
     if not st.kb_ok:
         mode_pill = '<span class="ab-pill"><span class="ab-dot err"></span>Knowledge base error</span>'
     elif st.retrieval_mode == "semantic":
-        mode_pill = '<span class="ab-pill"><span class="ab-dot"></span>Semantic search active</span>'
+        mode_pill = '<span class="ab-pill"><span class="ab-dot"></span>Semantic search</span>'
     else:
-        mode_pill = '<span class="ab-pill"><span class="ab-dot warn"></span>Lexical fallback mode</span>'
+        mode_pill = '<span class="ab-pill"><span class="ab-dot warn"></span>Lexical fallback</span>'
     entries = sum(st.kb_counts.values())
+    doshas = "".join(
+        f'<span class="ab-dosha"><i style="background:{color}"></i>{name} <small>{elements}</small></span>'
+        for name, elements, color in (
+            ("Vata", "space and air", "var(--ab-vata)"),
+            ("Pitta", "fire and water", "var(--ab-pitta)"),
+            ("Kapha", "water and earth", "var(--ab-kapha)"),
+        )
+    )
     return (
-        '<header id="ab-header"><div id="ab-brand">' + LEAF_SVG +
-        '<div><h1>AyurBot</h1><p>Explainable Ayurveda knowledge assistant for herbs, doshas and classical terms</p></div></div>'
-        f'<div id="ab-pills">{mode_pill}'
-        f'<span class="ab-pill">{entries} knowledge entries</span>'
-        '<span class="ab-pill">Private: runs on this computer</span></div></header>'
+        f'<header id="ab-header">{MANDALA_SVG}<div id="ab-brand">{LEAF_SVG}'
+        '<div><h1>AyurBot <span class="ab-sanskrit">आयुर्वेद</span></h1>'
+        '<p>Explore herbs, doshas and classical terms, with every answer traced to its source</p></div></div>'
+        f'<div id="ab-right"><div id="ab-doshas">{doshas}</div>'
+        f'<div id="ab-pills">{mode_pill}<span class="ab-pill">{entries} entries</span>'
+        '<span class="ab-pill">Runs locally</span></div></div></header>'
     )
 
 
@@ -311,7 +339,7 @@ def build_ui(service: AyurBotService):
                 chatbot = gr.Chatbot(
                     show_label=False,
                     height=520,
-                    placeholder="**Namaste. Ask about an herb, dosha or classical Ayurvedic term.**<br>"
+                    placeholder="**Namaste 🙏 Ask about an herb, dosha or classical Ayurvedic term.**<br>"
                                 "Each answer shows its sources and how your words were recognised.",
                     render_markdown=True,
                     sanitize_html=True,
@@ -409,14 +437,18 @@ def theme():
         radius_size="md",
         font=["Segoe UI", "system-ui", "-apple-system", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
     ).set(
-        body_background_fill="#ffffff",
-        background_fill_primary="#ffffff",
-        background_fill_secondary="#f7faf8",
-        block_background_fill="#ffffff",
+        body_background_fill="#eceee8",
+        body_background_fill_dark="#101612",
+        background_fill_primary="#f9faf7",
+        background_fill_primary_dark="#161f19",
+        background_fill_secondary="#f1f3ee",
+        background_fill_secondary_dark="#1a241d",
+        block_background_fill="#f9faf7",
+        block_background_fill_dark="#161f19",
         block_border_width="0px",
         block_shadow="none",
-        button_primary_background_fill="#2f6b45",
-        button_primary_background_fill_hover="#275839",
+        button_primary_background_fill="#2a4d37",
+        button_primary_background_fill_hover="#1e3a2a",
         button_primary_text_color="#ffffff",
         button_large_radius="10px",
         input_radius="10px",
@@ -472,7 +504,6 @@ def main(settings: Settings | None = None) -> int:
             ssr_mode=False,
             theme=theme(),
             css=CSS,
-            js=FORCE_LIGHT_JS,
         )
     except KeyboardInterrupt:
         log.info("Stopped.")

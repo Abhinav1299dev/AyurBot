@@ -1,37 +1,61 @@
-# Python
+
+# Python cache files
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Testing and coverage
 .pytest_cache/
+.tox/
+.nox/
 .coverage
+.coverage.*
 htmlcov/
 
 # Virtual environments
 .venv/
 venv/
+env/
 
-# Local configuration
+# Environment variables and secrets
 .env
-
-# Model / Gradio caches (if you point AYURBOT_MODEL_CACHE_DIR inside the project)
-models/
-.gradio/
-flagged/
-
-# Editors / OS
-.idea/
-*.swp
-.DS_Store
-Thumbs.db
-
-# Local IDE settings
-.vscode/
-!.vscode/extensions.json
-
-# Environment files
 .env.*
 !.env.example
 
-# Build artifacts
+# Model caches and downloaded artifacts
+models/
+.cache/
+huggingface_cache/
+.gradio/
+flagged/
+
+# Build and packaging artifacts
 build/
 dist/
 *.egg-info/
+pip-wheel-metadata/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# IDE and editor settings
+.idea/
+.vscode/
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db

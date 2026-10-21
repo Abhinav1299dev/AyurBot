@@ -484,4 +484,3 @@ def main(settings: Settings | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-    

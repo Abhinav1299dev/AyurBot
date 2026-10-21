@@ -13,6 +13,7 @@ from tests.conftest import KB_PATH
 
 
 @pytest.fixture()
+
 def clean_env(monkeypatch):
     for key in list(__import__("os").environ):
         if key.startswith("AYURBOT_"):

@@ -57,22 +57,87 @@ EXAMPLES = [
 ]
 
 CSS = """
-:root { --ab-leaf: #2f5d3a; --ab-ink: #1d2a21; --ab-turmeric: #c98a12; --ab-sage: #eef3ec; --ab-muted: #56665a; }
-.dark { --ab-leaf: #8cc79a; --ab-ink: #e6efe7; --ab-sage: #1c2620; --ab-muted: #a8b8ab; }
-.gradio-container { max-width: 1320px !important; margin: 0 auto !important; }
-#ab-header { padding: 18px 4px 6px; }
-#ab-header h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 2.1rem;
-  letter-spacing: -0.01em; color: var(--ab-leaf); margin: 0 0 4px; }
-#ab-header p { color: var(--ab-muted); margin: 0; max-width: 72ch; line-height: 1.5; }
-#ab-disclaimer { border-left: 4px solid var(--ab-turmeric); background: var(--ab-sage);
-  padding: 10px 14px; border-radius: 4px; color: var(--ab-ink); font-size: 0.92rem; line-height: 1.45; }
-#ab-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.84rem; color: var(--ab-ink); }
-#ab-legend span.sw { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 6px;
-  vertical-align: -1px; border: 1px solid rgba(0,0,0,.25); }
-#ab-legend b { font-weight: 600; }
-#ab-status { font-size: 0.88rem; }
-.ab-panel-title { margin: 2px 0 0 !important; color: var(--ab-ink); }
+:root {
+  --ab-green: #2e6b47; --ab-green-dark: #1f4d33; --ab-mint: #f1f8f3; --ab-mint-line: #d6e9dc;
+  --ab-turmeric: #b7790c; --ab-turmeric-soft: #fff8ea; --ab-line: #e6ebe7;
+  --ab-ink: #17241c; --ab-muted: #627068;
+}
+body, .gradio-container { background: #ffffff !important; }
+.gradio-container { max-width: 1360px !important; margin: 0 auto !important; padding: 0 24px 28px !important; }
+footer { display: none !important; }
+
+/* Header */
+#ab-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding: 20px 2px 16px; border-bottom: 1px solid var(--ab-line); margin-bottom: 16px; }
+#ab-brand { display: flex; align-items: center; gap: 14px; }
+#ab-brand h1 { font-family: Georgia, "Times New Roman", serif; font-size: 1.75rem; font-weight: 600;
+  margin: 0; color: var(--ab-green-dark); letter-spacing: -0.01em; line-height: 1.1; }
+#ab-brand p { margin: 4px 0 0; font-size: 0.92rem; color: var(--ab-muted); }
+#ab-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.ab-pill { display: inline-flex; align-items: center; gap: 7px; font-size: 0.8rem; font-weight: 600;
+  padding: 6px 12px; border-radius: 999px; background: var(--ab-mint); color: var(--ab-green-dark);
+  border: 1px solid var(--ab-mint-line); }
+.ab-dot { width: 8px; height: 8px; border-radius: 50%; background: #2fa35a; }
+.ab-dot.warn { background: #d99a15; }
+.ab-dot.err { background: #d4483b; }
+
+/* Safety notice */
+#ab-disclaimer { display: flex; gap: 12px; align-items: flex-start; background: var(--ab-turmeric-soft);
+  border: 1px solid #f1dfb5; border-radius: 12px; padding: 12px 16px; color: #4a3a12;
+  font-size: 0.88rem; line-height: 1.55; margin-bottom: 8px; }
+#ab-disclaimer svg { flex: none; margin-top: 1px; }
+#ab-disclaimer b { color: #7a5108; }
+
+/* Cards */
+.ab-card { background: #ffffff !important; border: 1px solid var(--ab-line) !important; border-radius: 16px !important;
+  padding: 18px !important; box-shadow: 0 1px 3px rgba(23,36,28,.04), 0 6px 18px rgba(23,36,28,.04); }
+.ab-section-title h3 { margin: 0 0 3px !important; font-size: 1.05rem !important; color: var(--ab-ink); font-weight: 650; }
+.ab-section-title p { margin: 0 !important; color: var(--ab-muted); font-size: 0.86rem; }
+#ab-chat { border: 1px solid var(--ab-line) !important; border-radius: 12px !important; background: #fbfdfb !important; }
+#ab-input textarea { font-size: 0.98rem !important; background: #ffffff !important; }
+#ab-send { min-height: 46px; align-self: stretch; }
+
+/* Quick topics */
+.ab-topic-label p { margin: 10px 0 4px !important; font-size: 0.78rem; font-weight: 650; color: var(--ab-muted); }
+.ab-chip { border-radius: 999px !important; background: #ffffff !important; border: 1px solid var(--ab-mint-line) !important;
+  color: var(--ab-green-dark) !important; font-weight: 500 !important; font-size: 0.84rem !important;
+  box-shadow: none !important; }
+.ab-chip:hover { background: var(--ab-mint) !important; border-color: var(--ab-green) !important; }
+.ab-chip:focus-visible { outline: 2px solid var(--ab-green) !important; outline-offset: 2px; }
+
+/* Explainability */
+#ab-legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px 14px;
+  font-size: 0.8rem; color: var(--ab-muted); padding: 10px 12px; background: #fafcfa;
+  border: 1px solid var(--ab-line); border-radius: 10px; margin: 6px 0 4px; }
+#ab-legend b { color: var(--ab-ink); font-weight: 600; margin-right: 4px; font-size: 0.74rem; }
+#ab-legend span.sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px;
+  border: 1px solid rgba(0,0,0,.15); }
+#ab-status { font-size: 0.86rem; line-height: 1.55; }
+#ab-footer { text-align: center; color: var(--ab-muted); font-size: 0.8rem; padding-top: 14px; }
+@media (max-width: 720px) {
+  .gradio-container { padding: 0 10px 18px !important; }
+  #ab-brand h1 { font-size: 1.45rem; }
+  .ab-card { padding: 12px !important; }
+}
 """
+# Always open in light mode so the page stays white.
+FORCE_LIGHT_JS = """
+() => {
+  const url = new URL(window.location.href);
+  if (url.searchParams.get('__theme') !== 'light') {
+    url.searchParams.set('__theme', 'light');
+    window.location.replace(url.href);
+  }
+}
+"""
+
+TOPICS = {
+    "Herbs": ["What is Tulsi?", "Tell me about Withania somnifera", "Compare Neem and Guduchi for skin disease"],
+    "Doshas": ["What is Vata?", "Does Haridra pacify Kapha?", "Which herbs may aggravate Vata?"],
+    "Classical terms": ["Which herbs are traditionally described for cough?", "What does Medhya mean?", "What is Jwara?"],
+    "Concepts": ["What is the difference between Prakriti and Vikriti?", "What is Agni?", "तुलसी क्या है?"],
+}
+
 
 
 # ---------------------------------------------------------------- helpers
@@ -142,6 +207,39 @@ def status_markdown(service: AyurBotService, last=None) -> str:
     return "\n\n".join(lines)
 
 
+LEAF_SVG = (
+    '<svg width="42" height="42" viewBox="0 0 48 48" aria-hidden="true">'
+    '<rect width="48" height="48" rx="12" fill="#2e6b47"/>'
+    '<path d="M14 34c0-12 8-20 22-21-1 14-9 22-21 22" fill="#9fd8a9"/>'
+    '<path d="M14 35c5-7 10-12 17-17" stroke="#1f3d2b" stroke-width="2.2" fill="none" stroke-linecap="round"/>'
+    '</svg>'
+)
+
+
+SHIELD_SVG = (
+    '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 '
+    '4.6-1.6 8-6 8-11V5l-8-3z" fill="#b7790c"/><path d="M11 7h2v6h-2zM11 15h2v2h-2z" fill="#fff"/></svg>'
+)
+
+
+def header_html(service: AyurBotService) -> str:
+    st = service.refresh_status()
+    if not st.kb_ok:
+        mode_pill = '<span class="ab-pill"><span class="ab-dot err"></span>Knowledge base error</span>'
+    elif st.retrieval_mode == "semantic":
+        mode_pill = '<span class="ab-pill"><span class="ab-dot"></span>Semantic search active</span>'
+    else:
+        mode_pill = '<span class="ab-pill"><span class="ab-dot warn"></span>Lexical fallback mode</span>'
+    entries = sum(st.kb_counts.values())
+    return (
+        '<header id="ab-header"><div id="ab-brand">' + LEAF_SVG +
+        '<div><h1>AyurBot</h1><p>Explainable Ayurveda knowledge assistant for herbs, doshas and classical terms</p></div></div>'
+        f'<div id="ab-pills">{mode_pill}'
+        f'<span class="ab-pill">{entries} knowledge entries</span>'
+        '<span class="ab-pill">Private: runs on this computer</span></div></header>'
+    )
+
+
 def find_free_port(host: str, preferred: int, attempts: int) -> int | None:
     for port in range(preferred, preferred + attempts):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
@@ -201,41 +299,52 @@ def build_ui(service: AyurBotService):
     empty_evidence = pd.DataFrame(columns=EVIDENCE_COLUMNS)
 
     with gr.Blocks(title="AyurBot: Explainable Ayurveda assistant", analytics_enabled=False) as demo:
-        gr.HTML(
-            '<header id="ab-header"><h1>AyurBot</h1>'
-            "<p>Ask about Ayurvedic herbs, doshas and classical terms. Every answer is built only from the "
-            "local knowledge base and shows which words were recognised and which entries were used.</p></header>"
-        )
-        gr.HTML(f'<div id="ab-disclaimer" role="note"><b>Educational prototype.</b> {html.escape(DISCLAIMER)}</div>')
+        gr.HTML(header_html(service))
+        gr.HTML(f'<div id="ab-disclaimer" role="note">{SHIELD_SVG}<span><b>For education only.</b> '
+                f'{html.escape(DISCLAIMER)}</span></div>')
 
         pending = gr.State("")
         with gr.Row(equal_height=False):
-            with gr.Column(scale=3, min_width=340):
+            with gr.Column(scale=7, min_width=360, elem_classes="ab-card"):
+                gr.Markdown("### Conversation\nAnswers come only from the local knowledge base.",
+                            elem_classes="ab-section-title")
                 chatbot = gr.Chatbot(
-                    label="Conversation",
-                    height=540,
-                    placeholder="Ask a question below, or pick an example.",
+                    show_label=False,
+                    height=520,
+                    placeholder="**Namaste. Ask about an herb, dosha or classical Ayurvedic term.**<br>"
+                                "Each answer shows its sources and how your words were recognised.",
                     render_markdown=True,
                     sanitize_html=True,
                     group_consecutive_messages=False,
+                    elem_id="ab-chat",
                 )
-                query = gr.Textbox(
-                    label="Your question",
-                    placeholder="e.g. Does Tulsi pacify Kapha?  (Enter to send, Shift+Enter for a new line)",
-                    lines=2,
-                    max_lines=6,
-                    max_length=service.settings.max_query_chars,
-                    autofocus=True,
-                )
+                with gr.Row(elem_id="ab-actions", equal_height=True):
+                    query = gr.Textbox(
+                        show_label=False,
+                        placeholder="Ask a question, e.g. Does Tulsi pacify Kapha?  (Enter to send, Shift+Enter for a new line)",
+                        lines=1,
+                        max_lines=6,
+                        max_length=service.settings.max_query_chars,
+                        autofocus=True,
+                        scale=8,
+                        elem_id="ab-input",
+                    )
+                    send = gr.Button("Send", variant="primary", scale=1, min_width=90, elem_id="ab-send")
                 with gr.Row():
-                    send = gr.Button("Send question", variant="primary", scale=3)
-                    clear = gr.Button("Clear chat", variant="secondary", scale=1)
-                gr.Examples(examples=[[e] for e in EXAMPLES], inputs=[query], label="Example questions")
+                    clear = gr.Button("Clear conversation", variant="secondary", size="sm", scale=0, min_width=170)
+                gr.Markdown("Not sure where to start? Tap a question to ask it.", elem_classes="ab-topic-label")
+                chips: list[tuple[Any, str]] = []
+                for topic, questions in TOPICS.items():
+                    gr.Markdown(topic, elem_classes="ab-topic-label")
+                    with gr.Row():
+                        for q in questions:
+                            chips.append((gr.Button(q, size="sm", elem_classes="ab-chip", scale=0), q))
 
-            with gr.Column(scale=2, min_width=320):
-                gr.Markdown("### How this answer was built", elem_classes="ab-panel-title")
+            with gr.Column(scale=5, min_width=330, elem_classes="ab-card"):
+                gr.Markdown("### Explainability\nWhat was recognised in your question and which entries were used.",
+                            elem_classes="ab-section-title")
                 highlighted = gr.HighlightedText(
-                    label="Recognised entities in your question",
+                    label="Recognised entities",
                     color_map=ENTITY_COLORS,
                     show_legend=False,
                     combine_adjacent=False,
@@ -245,20 +354,23 @@ def build_ui(service: AyurBotService):
                 with gr.Tabs():
                     with gr.Tab("Entities"):
                         entity_table = gr.Dataframe(
-                            value=empty_entities, label="Rule-based NER audit trail",
-                            interactive=False, wrap=True, max_height=360,
+                            value=empty_entities, show_label=False,
+                            interactive=False, wrap=True, max_height=340,
                         )
                     with gr.Tab("Evidence"):
                         evidence_table = gr.Dataframe(
-                            value=empty_evidence, label="Knowledge-base entries used",
-                            interactive=False, wrap=True, max_height=360,
+                            value=empty_evidence, show_label=False,
+                            interactive=False, wrap=True, max_height=340,
                         )
                         gr.Markdown(
-                            "Scores show how closely an entry matches the wording or meaning of your question. "
-                            "They are relevance indicators, not measures of medical accuracy or certainty."
+                            "<small>Scores show how closely an entry matches the wording or meaning of your question. "
+                            "They are relevance indicators, not measures of medical accuracy.</small>"
                         )
                     with gr.Tab("System status"):
                         status = gr.Markdown(status_markdown(service), elem_id="ab-status")
+
+        gr.HTML('<div id="ab-footer">AyurBot 2.0. Rule-based NER, Sentence Transformers retrieval and a local, '
+                'editable knowledge base. Not a substitute for professional medical advice.</div>')
 
         outputs_stage2 = [chatbot, highlighted, entity_table, evidence_table, status]
         for trigger in (query.submit, send.click):
@@ -269,6 +381,12 @@ def build_ui(service: AyurBotService):
                 answer, inputs=[pending, chatbot], outputs=outputs_stage2,
                 show_progress="minimal",
             )
+        for chip, q in chips:
+            chip.click(
+                lambda h, q=q: queue_user(q, h), inputs=[chatbot], outputs=[query, chatbot, pending],
+                queue=False, show_progress="hidden", api_name=False,
+            ).then(answer, inputs=[pending, chatbot], outputs=outputs_stage2, show_progress="minimal",
+                   api_name=False)
         clear.click(
             clear_all,
             outputs=[chatbot, highlighted, entity_table, evidence_table, status, query, pending],
@@ -280,11 +398,28 @@ def build_ui(service: AyurBotService):
 def theme():
     import gradio as gr
 
+    leaf = gr.themes.Color(
+        c50="#eef6f0", c100="#d9eadf", c200="#b5d6c0", c300="#88bb98", c400="#5c9c72",
+        c500="#3d8158", c600="#2f6b45", c700="#275839", c800="#1f4630", c900="#1a3a28", c950="#0f241a",
+    )
     return gr.themes.Soft(
-        primary_hue="green",
+        primary_hue=leaf,
         secondary_hue="amber",
-        neutral_hue="stone",
+        neutral_hue="slate",
+        radius_size="md",
         font=["Segoe UI", "system-ui", "-apple-system", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+    ).set(
+        body_background_fill="#ffffff",
+        background_fill_primary="#ffffff",
+        background_fill_secondary="#f7faf8",
+        block_background_fill="#ffffff",
+        block_border_width="0px",
+        block_shadow="none",
+        button_primary_background_fill="#2f6b45",
+        button_primary_background_fill_hover="#275839",
+        button_primary_text_color="#ffffff",
+        button_large_radius="10px",
+        input_radius="10px",
     )
 
 
@@ -337,6 +472,7 @@ def main(settings: Settings | None = None) -> int:
             ssr_mode=False,
             theme=theme(),
             css=CSS,
+            js=FORCE_LIGHT_JS,
         )
     except KeyboardInterrupt:
         log.info("Stopped.")
@@ -348,3 +484,4 @@ def main(settings: Settings | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+    
